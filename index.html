@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prince single page website</title>
+    <link rel="stylesheet" href="style.css" />
+  
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/Prince5.JPG" class="logo" >
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>WEBSITE DESIGNER-CRYPTO TRADER</p>
+          <h1>
+            Hi, I am <span>Prince</span><br>
+            from Nigeria</h1>
+        </div>
+        <!---about-->
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="Images/Prince6.PNG" class="Prince6" />
+              </div>
+              <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Web designer,crypto technical analyst</p>
+
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                  <!--<p class="tab-links" onclick="opentab('experience')">Experience </p>
+                  <p class="tab-links" onclick="opentab('education')"> Education</p>-->
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span>UI/UX</span><br>Designing web interfaces</li>
+                  <li><span>HTML5</span><br>Intern knowledge on HTML5</li>
+                    <li><span>GRAPHIC DESIGN</span><br> Advanced knowledge on Graphic design</li>
+                      <li><span>OTHER SKILLS</span><br>Crypto analyst,Crypto trader,Stress tolerance,Composure,Adaptability,communication and team work,Blockchain technology understanding</Br></li>
+                  </ul>
+                </div>
+                <!--<div class="tab-contents" id="experience">
+                  <ul>
+                    <li><span>2021</span><BR>tech Boot camp</BR></li>
+                    <li><span>2021-current</span><BR>Crypto analyst</BR></li>
+                    <li><span>current</span><BR>Internship at Bincom</BR></li>
+                  </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                    <li><span>2021-current</span><BR>Currently studying computer science in UNIZIK</BR></li>-->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classlist.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classlist.remove("active-tab");
+  }
+}
+
+
+    </script>
+<div class="Image-container">
+  <img src="Images/webdev.PNG" class="webdev">
+  <p class="shifted-caption1">WEB DEVELOPER</p>
+  <img src="Images/csstudent.JPG" class="csstudent">
+  <P class="hide-on-mobile">COMPUTER SCIENCE STUDENT</P>
+  <img src="Images/cryptotrader.JPG" class="cryptotrader">
+  <P class="shifted-caption3">CRYPTO TRADER</P>
+</div>
+  </body>
+</html>
